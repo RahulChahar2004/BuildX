@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { TextReveal } from "@/components/ui/text-reveal";
 import { FadeIn } from "@/components/ui/fade-in";
 import { ArrowRight, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 import { RobotAnimation } from "@/components/ui/robot-animation";
 
@@ -38,13 +39,13 @@ export function HeroSection() {
 
                         <FadeIn delay={0.8} direction="up">
                             <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">
-                                <button className="group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-black bg-[var(--color-accent)] rounded-full overflow-hidden transition-transform active:scale-95">
+                                <Link href="/start-interview" className="group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-black bg-[var(--color-accent)] rounded-full overflow-hidden transition-transform active:scale-95">
                                     <span className="relative z-10 flex items-center">
                                         Start Mock Interview
                                         <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                                     </span>
                                     <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
-                                </button>
+                                </Link>
                                 <button className="inline-flex items-center justify-center px-8 py-4 font-semibold text-white bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-colors active:scale-95">
                                     See How It Works
                                 </button>
